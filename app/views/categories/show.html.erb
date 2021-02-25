@@ -1,0 +1,6 @@
+ <div class="title-wrap">
+ <% @category.products.each do |product| %>
+   <%= link_to product.title, product, class: "" %>
+    <%= product.description %>
+  <% end %>
+  </div>
