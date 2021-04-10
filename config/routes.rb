@@ -5,7 +5,11 @@ Rails.application.routes.draw do
   resources :categories, only: :show
   namespace :admin do
     get '/', to: redirect('/admin/categories')
-    resources :categories
+    resources :categories do
+      collection do
+        put :sort
+      end
+    end
     resources :products
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

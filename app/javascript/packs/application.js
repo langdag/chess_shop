@@ -7,6 +7,18 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import $ from 'jquery'
+import jQuery from 'jquery'
+import "jquery-ui/sortable"
+import "nestedSortable"
+
+//import 'webpack-jquery-ui'
+//import "jquery-ui/ui/widgets/sortable"
+
+
+window.jQuery = $;
+window.$ = $;
+
 
 Rails.start()
 Turbolinks.start()
